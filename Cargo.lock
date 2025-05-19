@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "domino-rust"
-version = "0.1.0"
+name = "domino-cipher"
+version = "1.0.0"

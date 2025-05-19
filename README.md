@@ -19,3 +19,21 @@ You can provide a secret key via the `--key` option. The key permutes the grid s
 ## How to use
 
 You can build and run the program with Cargo.
+
+To encrypt a message:
+```
+cargo run -- --encrypt "HELLO WORLD" --key SECRET
+```
+
+To decrypt a message back into plaintext:
+
+```
+cargo run -- --decrypt "[1|3],[0|1],[2|0],[2|0],[2|3],[6|6],[3|1],[2|3],[0|3],[2|0],[1|0]" --key SECRET
+```
+To see the active Polybius grid based on a secret key:
+```
+cargo run -- --key SECRET --print-grid
+```
+If no key is provided, the default grid order will be used. 
+
+This project is designed for experimentation, puzzles, or encoding basic information in a playful way. 

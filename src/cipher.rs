@@ -59,7 +59,7 @@ pub fn decrypt(tiles: &[(u8, u8)], key: Option<&str>) -> String {
     result
 }
 
-pub fn print_grid(key: Option<&str>) { //for testing//
+pub fn print_grid(key: Option<&str>) { 
     let grid = create_polybius_grid(key);
     println!("grid:"); 
     for row in grid.iter() {
